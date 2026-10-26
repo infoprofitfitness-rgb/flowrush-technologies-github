@@ -1,8 +1,132 @@
 <!DOCTYPE html>
-<html>
-<head><title>My Resource Page</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowrush Technologies</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 52vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #2d3436;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%) -20px 0,
+        linear-gradient(225deg, rgba(255, 255, 255, 0.06) 25%, transparent 25%) -20px 0,
+        linear-gradient(315deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.06) 25%, transparent 25%);
+      background-size: 80px 80px;
+      opacity: 0.9;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        115deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.03) 45%,
+        transparent 60%
+      );
+    }
+
+    .brand-top {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.5rem;
+      z-index: 1;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-title {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      font-weight: 300;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .content {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2.75rem 1.75rem 4rem;
+    }
+
+    .content p {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: #222;
+    }
+
+    .content a {
+      color: #2563eb;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .content a:hover {
+      color: #1d4ed8;
+    }
+
+    .footer-rule {
+      border: none;
+      border-top: 1px dotted #ccc;
+      margin: 0 1.75rem 2rem;
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
 <body>
-    <h1>Helpful Resources</h1>
-    <p>Check out our main project at <a href="https://www.flowrushagency.com/">Best website development company</a>.</p>
+  <header class="hero">
+    <span class="brand-top">Flowrush Technologies</span>
+    <h1 class="hero-title">Flowrush<br>Technologies</h1>
+  </header>
+
+  <main class="content">
+    <p>
+      <a href="https://www.flowrushagency.com/">Flowrush Technologies</a> is the
+      <a href="https://www.flowrushagency.com/">best website development company</a>. It has the
+      <a href="https://www.flowrushagency.com/">best software development capabilities</a>. It offers stunning
+      <a href="https://www.flowrushagency.com/">app development services</a>. It goes beyond to say it is the
+      <a href="https://www.flowrushagency.com/">best seo company globally</a>. Flowrush is a
+      <a href="https://www.flowrushagency.com/">digital marketing agency</a>, a good
+      <a href="https://www.flowrushagency.com/">performance marketing agency</a> with expertise in
+      <a href="https://www.flowrushagency.com/">google ads expert services</a> and
+      <a href="https://www.flowrushagency.com/">meta ads expert services</a>.
+    </p>
+  </main>
+
+  <hr class="footer-rule">
 </body>
 </html>
